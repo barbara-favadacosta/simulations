@@ -1,8 +1,8 @@
 
-#Traffic simulation
+# Traffic simulation
 
 
-#The Model
+# The Model
 
 This project aims to simulate a simplified road traffic. The simulation provides insights to the relationship between traffic flow and car density, as well as how that changes as more lanes are added to the model. In this simulation, the road is unidirectional and the cars can move to either lane immediately next to them (right or left lane). Finally, this simulation builds upon the traffic model presented by Nagel &
 
@@ -26,7 +26,7 @@ Although the model counts on pre-determined rules to run smoothly, it does take 
 
 As per the rules that dictates the simulation, we can divide them up into two categories: lane shift and velocity update.
 
-#Lane Shift
+# Lane Shift
 
 For a car to switch lanes, it must obey the following rules:
 
@@ -38,7 +38,7 @@ For a car to switch lanes, it must obey the following rules:
 
 4.  It satisfies the probability of changing lanes defined in the model
 
-#Velocity Update
+# Velocity Update
 
 For a car to update its velocity, it follows the rules specified below:
 
@@ -50,13 +50,12 @@ For a car to update its velocity, it follows the rules specified below:
 
 Finally, the model updates the cars' positions to reflect the updated velocities.
 
-#Analysis
+# Analysis
 
 The main metric of analysis for this project will be the traffic flow. In this case, traffic flow is given as the number of cars that leave and re-enter the road per time step. This simulation assumes periodic boundary, so having cars re-entering the road can be seen as a new influx of cars. 
 
 For this analysis, I have run several different simulation trials for every density of cars from 0.05 to 1 at 0.05 intervals to be able to retrieve an average for the traffic flow at every density value. Additionally, I ran such trials under different lane scenarios to compare the results across simulation runs.
 
-![](https://lh5.googleusercontent.com/XBA-3d5q16fMuONcthOXIJ_8dX7Ne-_XL4npUg7WkiEnwtHSHjDkDrzj5WBVeaHXQWouTri8AzxzL4xvB6CCNABihbbhtI_Bp3S6169B-ZVbCtNeJK_5LzhGW1NGGGkr2MWcvewG)![](https://lh5.googleusercontent.com/WzgQkxLSM5fJCI69WvmJIC9fKEdsWxhyg9-lxsyf4ZOT0cnxbP6r8ATjuQ3YLxJ21ZyE4dZrol_Juwwmq9_UyIU3ryGrTvVKRttotRyXCiaaXLI47PfHUUcMuOFDWHBfzAPfsRvD)
 
 ![](https://lh3.googleusercontent.com/StngwDj5X8kt0wA3l7UbYh9Np9IykrbQBZ0yWECzBl9LSKF19fKfIXcJRolWh9tc9FzLoKy0XMybm3zos4kOTCdjhinFBSJbNPOexx7-3Pt82UJYz31yv8yurjN1TOtU5n9vh6K7)
 
@@ -76,8 +75,7 @@ Generally, at extremely low densities, we can see a steady increase in the traff
 
 ![](https://lh6.googleusercontent.com/Xc8cbKGJ27jj9uefeaVidh4Hu4J_Ng5f3QtJcul4KhHiRliWgOM67r_FDxa95pZ5c1kVLAIqbiVmqQyJGWLqaFgpvCNLd9GUq9Nxv5rnfW6pFUncmhDgSjlp7R2sswsAk5bnea4T)
 
-#References
+# References
 
 Nagel, K., Schreckenberg, M. (1992). A cellular automaton model for freeway traffic. Journal de Physique I, 2(12), 2221--2229.
-
 Rickert, M., et al. (1996). Two Lane Traffic Simulations using Cellular Automata. Physica A: Statistical Mechanics and its Applications, 231(4), 534--550. 
